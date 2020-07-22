@@ -122,6 +122,7 @@ class Recording extends PureComponent {
               </div>
             </div>
           }
+		  
           <div className="flex flex-initial flex-col rounded bg-white text-black shadow m-2 p-4">
             <div className="flex items-end justify-between">
               <h3 className="mr-3 text-xl font-bold">Itinéraires</h3>
@@ -132,12 +133,30 @@ class Recording extends PureComponent {
             </div>
             <div className="mt-6 rounded relative">
               <div className="text-white absolute" style={{ bottom: 10, left : 10}}>
-                <h2 className="inline text-4xl font-bold">{this.props.nbPaths}</h2> objects tracked
+                <h2 className="inline text-4xl font-bold">{this.props.nbPaths}</h2> objets tracés
               </div>
               <img src="/static/placeholder/pathview.jpg" />
             </div>
           </div>
         </div>
+		
+		<div className="flex flex-initial flex-col rounded bg-white text-black shadow m-2 p-4">
+            <div className="flex items-end justify-between">
+              <h3 className="mr-3 text-xl font-bold">Analyses</h3>
+              <div>
+                <div className="font-medium mr-2 inline-block">Telecharger:</div>
+                <a className="btn-text mr-2" href="index.html" target="_blank" Afficher ></a>
+              </div>
+            </div>
+            <div className="mt-6 rounded relative">
+              <div className="text-white absolute" style={{ bottom: 10, left : 10}}>
+                <h2 className="inline text-4xl font-bold">{this.props.nbPaths}</h2> données analysées
+              </div>
+              <img src="/static/placeholder/analyses.jpg" />
+            </div>
+          </div>
+        </div>
+		
         <style jsx>{`
           {/* Didn't succeed to make this better: https://stackoverflow.com/questions/54384305/dynamic-width-parent-with-flexbox-column-wrapping 
             Seems cannot have container parent width shrink when some element are wrapping
