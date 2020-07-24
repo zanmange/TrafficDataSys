@@ -270,7 +270,7 @@
     "title": "Status",
     "name": "Status",
     "group": "Helper",
-    "description": "<p>Return opendatacam status (isRecording, recordingId etc etc)</p>",
+    "description": "<p>Return TrafficDataSys status (isRecording, recordingId etc etc)</p>",
     "success": {
       "examples": [
         {
@@ -287,10 +287,10 @@
   {
     "type": "get",
     "url": "/start",
-    "title": "Start Opendatacam",
+    "title": "Start TrafficDataSys",
     "name": "Start",
-    "group": "Opendatacam",
-    "description": "<p>Start opendatacam without loading the UI</p> <p>This will start the YOLO process on the video input stream</p>",
+    "group": "TrafficDataSys",
+    "description": "<p>Start TrafficDataSys without loading the UI</p> <p>This will start the YOLO process on the video input stream</p>",
     "success": {
       "examples": [
         {
@@ -302,7 +302,7 @@
     },
     "version": "0.0.0",
     "filename": "./server.js",
-    "groupTitle": "Opendatacam"
+    "groupTitle": "TrafficDataSys"
   },
   {
     "type": "get",

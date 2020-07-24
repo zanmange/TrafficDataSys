@@ -119,7 +119,7 @@ class Menu extends Component {
               <div className="flex flex-col">
                   <p>Version {this.props.version}</p>
                   <a className="mt-2" target="_blank" href="/api/doc">Documentation</a>
-                  <a className="mt-2" href="https://github.com/opendatacam/opendatacam" target="_blank">Copyright</a>
+                  <a className="mt-2" href="http://aa-consultingengineers.com/" target="_blank">Copyright</a>
               </div>
           </div>
         </div>

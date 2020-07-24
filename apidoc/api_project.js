@@ -1,8 +1,8 @@
 define({
-  "name": "OpenDataCam API",
+  "name": "TrafficDataSys API",
   "version": "3.0.1",
   "description": "",
-  "title": "OpenDataCam API",
+  "title": "TrafficDataSys API",
   "template": {
     "withCompare": false
   },

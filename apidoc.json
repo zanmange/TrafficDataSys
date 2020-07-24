@@ -1,7 +1,7 @@
 {
-  "name": "OpenDataCam API",
+  "name": "TrafficDataSys API",
   "description": "",
-  "title": "OpenDataCam API",
+  "title": "TrafficDataSys API",
   "template": {
     "withCompare": false
   }
