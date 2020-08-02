@@ -8,7 +8,8 @@ import { getCounterColor, getDisplayClasses } from '../../utils/colors.js';
 import { COUNTING_AREA_TYPE } from '../../utils/constants.js';
 import RecordingDeleteConfirmationModal from '../shared/RecordingDeleteConfirmationModal.js';
 
-class Recording extends PureComponent {
+
+class Analysis extends PureComponent {
 
   constructor(props) {
     super(props);
@@ -77,7 +78,7 @@ class Recording extends PureComponent {
           {this.props.countingAreas.size > 0 &&
             <div className="flex flex-initial flex-col rounded bg-white text-black shadow m-2 p-4">
               <div className="flex items-end justify-between">
-                <h3 className="mr-3 text-xl font-bold">Compteur</h3>
+                <h3 className="mr-3 text-xl font-bold">Details par Zones</h3>
                 <div>
                   <div className="font-medium mr-2 inline-block"> Telecharger :</div>
                   <a className="btn-text mr-2" href={`/recording/${this.props.id}/counter`} target="_blank" Telecharger>JSON</a>
@@ -122,9 +123,10 @@ class Recording extends PureComponent {
               </div>
             </div>
           }
+          
           <div className="flex flex-initial flex-col rounded bg-white text-black shadow m-2 p-4">
             <div className="flex items-end justify-between">
-              <h3 className="mr-3 text-xl font-bold"> Itinéraires </h3>
+              <h3 className="mr-3 text-xl font-bold"> Recapitulatif </h3>
               <div>
                 <div className="font-medium mr-2 inline-block">Telecharger:</div>
                 <a className="btn-text mr-2" href={`/recording/${this.props.id}/tracker`} target="_blank" Telecharger>JSON</a>
@@ -132,12 +134,14 @@ class Recording extends PureComponent {
             </div>
             <div className="mt-6 rounded relative">
               <div className="text-white absolute" style={{ bottom: 10, left : 10}}>
-                <h2 className="inline text-4xl font-bold">{this.props.nbPaths}</h2> Itinéraires
+              <h2 className="inline text-4xl font-bold"> {this.props.nbPaths} </h2> Itinéraires
               </div>
-              <img src="/static/placeholder/pathview.jpg" />
+              <img src="/static/placeholder/analyses.jpg" />
+              {console.log(this.props.counterData)}
             </div>
           </div>
         </div>
+        
         <style jsx>{`
           {/* Didn't succeed to make this better: https://stackoverflow.com/questions/54384305/dynamic-width-parent-with-flexbox-column-wrapping 
             Seems cannot have container parent width shrink when some element are wrapping
@@ -158,4 +162,4 @@ class Recording extends PureComponent {
   }
 }
 
-export default connect()(Recording)
+export default connect()(Analysis)

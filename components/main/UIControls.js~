@@ -72,8 +72,8 @@ class UIControls extends Component {
               </button>  
               
               <button
-                className={`btn btn-default shadow ${this.props.mode === MODE.ANALYSISVIEW ? 'btn-default--active' : ''}`}
-                onClick={() => this.props.dispatch(setMode(MODE.ANALYSISVIEW))}>
+                className={`btn btn-default shadow ${this.props.mode === MODE.DATAVIEW ? 'btn-default--active' : ''}`}
+                onClick={() => this.props.dispatch(setMode(MODE.DATAVIEW))}>
                 Analyses
               </button>              
               

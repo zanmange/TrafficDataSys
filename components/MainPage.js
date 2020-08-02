@@ -12,6 +12,7 @@ import CounterView from './main/CounterView';
 import PathView from './main/PathView';
 import ConsoleView from './main/ConsoleView';
 import DataView from './main/DataView';
+import AnalysisView from './main/AnalysisView';
 
 import { MODE } from '../utils/constants';
 import UIControls from './main/UIControls';
@@ -97,6 +98,9 @@ class MainPage extends React.PureComponent {
             }
             {this.props.mode === MODE.DATAVIEW &&
               <DataView />
+            }
+            {this.props.mode === MODE.ANALYSISVIEW &&
+              <AnalysisView />
             }
             {this.props.mode === MODE.CONSOLEVIEW &&
               <ConsoleView />

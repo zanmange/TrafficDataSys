@@ -1,5 +1,5 @@
 {
-  "name": "OpenDataCam",
+  "name": "TrafficDataSys",
   "version": "3.0.1",
   "scripts": {
     "dev": "node server.js",

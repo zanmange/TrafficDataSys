@@ -536,8 +536,10 @@ module.exports = {
     //   "blablal": {
     //   }
     // }
-
+    
     var counterSummary = {};
+    var kl = 0;
+    var tableaux = {} ;
 
     Opendatacam.countedItemsHistory.forEach((countedItem) => {
       if(!counterSummary[countedItem.area]) {
@@ -551,8 +553,16 @@ module.exports = {
         counterSummary[countedItem.area][countedItem.name]++;
       }
       counterSummary[countedItem.area]['_total']++;
-    })
 
+      tableaux[kl] = {} ;
+
+      //tableaux[kl][0] = countedItem.area;
+      //tableaux[kl][1] = countedItem.name;
+      //tableaux[kl][2] = 1;
+      
+      kl++;
+
+    })
     return counterSummary;
   },
 

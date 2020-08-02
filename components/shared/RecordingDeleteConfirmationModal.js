@@ -10,7 +10,7 @@ class RecordingDeleteConfirmationModal extends Component {
           <h3 className="text-center text-xl font-bold">
             Delete Recording
           </h3>
-          <div className="text-center mt-2">Are you sure you want to delete this recording ?</div>
+          <div className="text-center mt-2">Êtes-vous sûr de vouloir supprimer cet enregistrement ?</div>
           <div className="flex items-center">
             <button 
                 className="btn btn-secondary btn-rounded min-w-100 mt-5 pl-10 pr-10"
