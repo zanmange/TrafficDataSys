@@ -1,6 +1,6 @@
 version: "2.3"
 services:
-  opendatacam:
+  trafficdatasys:
     restart: always
     image: opendatacam/opendatacam:v3.0.1-nano
     privileged: true
