@@ -37,12 +37,12 @@ const handle = app.getRequestHandler()
 // Log config loaded
 if(SIMULATION_MODE) {
   console.log('-----------------------------------')
-  console.log('-     Opendatacam initialized     -')
+  console.log('-   Trafficdatasys initialized    -')
   console.log('- IN SIMULATION MODE              -')
   console.log('-----------------------------------')
 } else {
   console.log('-----------------------------------')
-  console.log('-     Opendatacam initialized     -')
+  console.log('-   Trafficdatasys initialized    -')
   console.log('- Config loaded:                  -')
   console.log(JSON.stringify(config, null, 2));
   console.log('-----------------------------------')
