@@ -1,6 +1,6 @@
 {
   "OPENDATACAM_VERSION": "3.0.1",
-  "PATH_TO_YOLO_DARKNET" : "/home/aac/darknet",
+  "PATH_TO_YOLO_DARKNET" : "/darknet",
   "VIDEO_INPUT": "usbcam",
   "NEURAL_NETWORK": "yolov3-tiny",
   "VIDEO_INPUTS_PARAMS": {
@@ -88,7 +88,7 @@
       "canvasResolutionFactor": 0.1
     }
   },
-  "MONGODB_URL": "mongodb://127.0.0.1:27017",
+  "MONGODB_URL": "mongodb://mongo:27017",
   "PORTS": {
     "app": 8080,
     "darknet_json_stream": 8070,
